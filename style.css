@@ -7,6 +7,7 @@
 
 body {
     width: 100vw;
+    padding-bottom: 50px;
 }
 
 header {
@@ -52,6 +53,16 @@ main {
     justify-content: center;
 }
 
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+th {
+    padding-top: 24px;
+    padding-bottom: 46px;
+}
+
 .plan {
     color: #263FA9;
     font-weight: 600;
@@ -59,7 +70,7 @@ main {
     margin-bottom: 12px;
 }
 
-th > h2 {
+th h2 {
     font-weight: 600;
     font-size: 4rem;
     color: #121826;
@@ -76,4 +87,115 @@ col {
     max-width: 230px;
     width: 20%;
     min-width: 210px;
+}
+
+tr th:first-child {
+    background-color: #FFFFFF;
+}
+
+colgroup col:first-child {
+    background-color: #E5E7EB;
+}
+
+tr td {
+    text-align: center;
+    color: #121826;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 16px 0;
+}
+
+tr td:first-child {
+    text-align: start;
+    font-weight: 600;
+    padding-left: 12px;
+}
+
+#popular-column {
+    background-color: #121826;
+}
+
+#popular {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.popular-selection,
+#popular > h2,
+#popular p{
+    color: #FFFFFF;
+}
+
+#popular .plan {
+    display: inline-block;
+    background-color: #263FA9;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 2px 15px;
+}
+
+tbody tr td {
+    border-bottom: 1px solid #4D556233;
+}
+
+#button td {
+    padding: 24px 0;
+}
+
+button {
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border: none;
+    color: #263FA9;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-popular{
+    background-color: #7C4F1E;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#btn-4 {
+    background-color: #7C4F1E;
+    color: #FFFFFF;
+}
+
+#button td:first-child {
+    background-color: #FFFFFF;
+}
+
+main tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:first-child td:first-child{
+    border-top-left-radius: 10px;
+}
+
+tbody tr:nth-child(8) td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+@media (max-width: 1279px) {
+    col {
+        width: 25%;
+    }
+    .hid-1 {
+        display: none;
+    }
+}
+
+@media (max-width: 1023px) {
+    col {
+        width: 33.33%;
+    }
+    .hid-2 {
+        display: none;
+    }
 }
