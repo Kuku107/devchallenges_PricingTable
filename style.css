@@ -45,3 +45,35 @@ header img {
     height: auto;
     z-index: 0;
 }
+
+main {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.plan {
+    color: #263FA9;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+th > h2 {
+    font-weight: 600;
+    font-size: 4rem;
+    color: #121826;
+    margin-bottom: 6px;
+}
+
+th p {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #4D5562;
+}
+
+col {
+    max-width: 230px;
+    width: 20%;
+    min-width: 210px;
+}
